@@ -1,0 +1,30 @@
+[project]
+name = 'amm-pool'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+
+[[project.requirements]]
+contract_id = 'STXWGJQ101N1C1FYHK64TGTHN4793CHVKRW3ZGVV.trait-sip-010'
+
+[[project.requirements]]
+contract_id = 'STXWGJQ101N1C1FYHK64TGTHN4793CHVKRW3ZGVV.token-x010'
+
+[[project.requirements]]
+contract_id = 'STXWGJQ101N1C1FYHK64TGTHN4793CHVKRW3ZGVV.token-y010'
+
+[[project.requirements]]
+contract_id = 'STXWGJQ101N1C1FYHK64TGTHN4793CHVKRW3ZGVV.amm-swap005'
+[contracts.amm-swap005]
+path = 'contracts/amm-swap005.clar'
+clarity_version = 1
+epoch = 2.05
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
