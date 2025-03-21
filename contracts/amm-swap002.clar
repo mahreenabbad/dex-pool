@@ -5,8 +5,6 @@
 (define-constant ERR-SAME-TOKENS u2001)      ;; Error code for when token-x and token-y are the same
 (define-constant ERR-INVALID-FACTOR u2002)    ;; Error code for when token-x and token-y are the same
 
-
-
 (define-constant ERR-NOT-AUTHORIZED (err u1000))
 (define-constant ERR-INVALID-LIQUIDITY (err u2003))
 (define-constant ERR-POOL-ALREADY-EXISTS (err u2000))
